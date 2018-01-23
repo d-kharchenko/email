@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/vendor.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<div class="uk-container header ">
+		<div class="uk-section uk-padding-remove-top">
+			<nav class="uk-navbar-container uk-margin nav-magrin" uk-navbar>
+			<div class="uk-navbar-center">
+				 <div class="uk-navbar-center-left">
+		        <ul class="uk-navbar-nav">
+		            <li class="uk-parent"><a href="#">Головна</a></li>
+		            <li class="uk-parent">
+		            	<a href="#" class="nav-hover-link">Продукти 1С <span uk-icon="icon: chevron-down" class="link-arrow"></span></a>
+						<div class="uk-navbar-dropdown">
+		                    <ul class="uk-nav uk-navbar-dropdown-nav">
+		                        <li><a href="#">Active</a></li>
+		                        <li><a href="#">Item</a></li>
+		                        <li><a href="#">Item</a></li>
+		                    </ul>
+		                </div>
+		            </li>
+		            <li class="uk-parent"><a href="#">Наша команда</a></li>
+		        </ul>
+		    </div>
+		    <a class="uk-navbar-item uk-logo custom-logo" href="#"><img src="img/logo-island.png"></a>
+		     <div class="uk-navbar-center-right">
+		        <ul class="uk-navbar-nav">
+		            <li class="uk-parent">
+		            	<a href="#" class="nav-hover-link">Послуги <span uk-icon="icon: chevron-down" class="link-arrow"></span></a>
+						<div class="uk-navbar-dropdown">
+		                    <ul class="uk-nav uk-navbar-dropdown-nav">
+		                        <li><a href="#">Active</a></li>
+		                        <li><a href="#">Item</a></li>
+		                        <li><a href="#">Item</a></li>
+		                    </ul>
+		                </div>
+		            </li>
+		            <li class="uk-parent"><a href="#">Наші клієнти</a></li>
+		            <li class="uk-parent"><a href="#">Контакти</a></li>
+		        </ul>
+		    </div>
+			</div> 
+		</nav>
+		<div class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/top-bg.png);">
+			<div class="uk-text-center">
+				<h1 class="uk-h1 uk-margin-remove company-name">Ісланд-Україна</h1>
+		    	<h4 class="uk-margin-remove company-title">Ми експерти в автоматизації бухгалтерського та управлінського обліку</h4>
+			</div>
+		 </div>
+		 <div class="uk-position-fixed uk-position-large uk-position-bottom-right uk-overlay callback">
+		 	<img uk-toggle="target: #my-id" type="button" src="img/phone-icon.png" class="callback__icon" alt="Замовити дзвінок" title="Замовити дзвінок">
+			<div id="my-id" class="uk-flex-top" uk-modal>
+			    <div class="uk-modal-dialog uk-margin-auto-vertical uk-modal-body">
+			    	<button class="uk-modal-close-default" type="button" uk-close></button>
+			    	<div class="uk-modal-header">
+			            <h2 class="uk-modal-title">Заповніть форму</h2>
+			        </div>
+			        <form id="callback-form" method="post">
+			        	<div class="uk-margin">
+			        		<label class="uk-form-label" for="form-horizontal-text">Введіть номер телефону</label>
+					        <div class="uk-inline uk-form-controls">
+					            <span class="uk-form-icon" uk-icon="icon: receiver"></span>
+					            <input class="uk-input uk-input  uk-form-width-large" type="tel" name="phone" required pattern="[0-9]{10}" minlength="10" maxlength="10">
+					        </div>
+					    </div>
+					    <div class="uk-margin">
+					    	<label class="uk-form-label" for="form-horizontal-text">Введіть ім'я</label>
+					        <div class="uk-inline uk-form-controls">
+					            <span class="uk-form-icon" uk-icon="icon: user"></span>
+					            <input class="uk-input uk-form-width-large" type="text" name="name" required minlength="2" maxlength="20">
+					        </div>
+					    </div>
+					    <div class="uk-margin">
+					        <label class="uk-form-label" for="form-horizontal-text">Залишити коментар</label>
+					        <div class="uk-inline uk-form-controls">
+					        	<span class="uk-form-icon" uk-icon="icon: comment"></span>
+					            <input class="uk-input uk-form-width-large" id="form-horizontal-text" type="text" name="commit">
+					        </div>
+					    </div>
+				        <div class="uk-modal-footer uk-text-right">
+				            <button class="uk-button uk-button-default uk-modal-close" type="button">Закрити</button>
+				            <button class="uk-button uk-button-primary" type="submit">Відправити</button>
+				        </div>
+			        </form>
+			        
+			    </div>
+			</div>
+		 </div>
+		</div>
+		
+	</div>
+	<!-- end header -->
+	<div class="uk-container hr-line">
+		<hr class="uk-divider-icon">
+	</div>
+	<div class="uk-container">
+		<div class="uk-section">
+			<div class="uk-child-width-expand@s uk-text-center" uk-grid>
+				<div>
+			        <div class="uk-card uk-card-default uk-height-1-1">
+			            <div class="uk-card-media-top">
+			                <img src="img/install-icon.png" alt="">
+			            </div>
+			            <div class="uk-card-body">
+			                <h3 class="uk-card-title">ПРОДАЖ І ПОСТАВКА ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ</h3>
+			                <p>Програмне забезпечення 1С, Microsoft, Linux, Агент+,MeDoc, 1С-Звіт</p>
+			            </div>
+			        </div>
+			    </div>
+				<div>
+			        <div class="uk-card uk-card-default uk-height-1-1">
+			            <div class="uk-card-media-top">
+			                <img src="img/administration-icon.png" alt="">
+			            </div>
+			            <div class="uk-card-body">
+			                <h3 class="uk-card-title">ПІДТРИМКА СИСТЕМ 1С: ПІДПРИЄМСТВО ВЕРСІЙ 8 ТА 7.7</h3>
+			                <p>Впровадження, розробка, навчання та супроводження 1С: Підприємство 8 та 1С: Підприємство 7.7. Інформаційно-технологічний супровід (ІТС), 1С-Звіт</p>
+			            </div>
+			        </div>
+			    </div>
+			    <div>
+			        <div class="uk-card uk-card-default uk-height-1-1">
+			            <div class="uk-card-media-top">
+			                <img src="img/setting-icon.png" alt="">
+			            </div>
+			            <div class="uk-card-body">
+			                <h3 class="uk-card-title">АДМІНІСТРУВАННЯ КОМП'ЮТЕРНИХ СИСТЕМ</h3>
+			                <p>Встановлення, налаштування та підтримка операційних систем Windows, Linux.</p>
+			            </div>
+			        </div>
+			    </div>
+			    <div>
+			        <div class="uk-card uk-card-default uk-height-1-1">
+			            <div class="uk-card-media-top">
+			                <img src="img/video-icon.png" alt="">
+			            </div>
+			            <div class="uk-card-body">
+			                <h3 class="uk-card-title">СИСТЕМИ ВІДЕОСПОСТЕРЕЖЕННЯ ТА БЕЗПЕКИ</h3>
+			                <p>Продаж та встановлення систем відеоспостереження, безпеки для дому, офісу, торгових центрів та промислових об'єктів</p>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="uk-container hr-line">
+		<hr class="uk-divider-icon">
+	</div>
+	<!-- start product block -->
+	<div class="uk-section products">
+		<div class="uk-container ">
+			<h2 class="uk-text-center">Продукти 1С</h2>
+			<div class="uk-position-relative uk-visible-toggle uk-light uk-text-center" uk-slider>
+			    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid">
+			        <li>
+			            <div>
+					        <div class="uk-card uk-card-default">
+					            <div class="uk-card-media-top">
+					                <img class="products__icon" src="img/1C-small-bussines.jpg" alt="">
+					            </div>
+					            <div class="uk-card-body">
+					                <h3 class="uk-card-title">Media Top</h3>
+					                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+					                <button class="uk-button uk-button-primary">Придбати</button>
+					            </div>
+					        </div>
+					    </div>
+			        </li>
+			        <li>
+			            <div>
+					        <div class="uk-card uk-card-default">
+					            <div class="uk-card-media-top">
+					                <img class="products__icon" src="img/1C-small-bussines.jpg" alt="">
+					            </div>
+					            <div class="uk-card-body">
+					                <h3 class="uk-card-title">Media Top</h3>
+					                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+					                <button class="uk-button uk-button-primary">Придбати</button>
+					            </div>
+					        </div>
+					    </div>
+			        </li>
+			        <li>
+			           <div>
+					        <div class="uk-card uk-card-default">
+					            <div class="uk-card-media-top">
+					                <img class="products__icon" src="img/1C-small-bussines.jpg" alt="">
+					            </div>
+					            <div class="uk-card-body">
+					                <h3 class="uk-card-title">Media Top</h3>
+					                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+					                <button class="uk-button uk-button-primary">Придбати</button>
+					            </div>
+					        </div>
+					    </div>
+			        </li>
+			        <li>
+			           <div>
+					        <div class="uk-card uk-card-default">
+					            <div class="uk-card-media-top">
+					                <img class="products__icon" src="img/1C-small-bussines.jpg" alt="">
+					            </div>
+					            <div class="uk-card-body">
+					                <h3 class="uk-card-title">Media Top</h3>
+					                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+					                <button class="uk-button uk-button-primary">Придбати</button>
+					            </div>
+					        </div>
+					    </div>
+			        </li>
+			        <li>
+			           <div>
+					        <div class="uk-card uk-card-default">
+					            <div class="uk-card-media-top">
+					                <img class="products__icon" src="img/1C-small-bussines.jpg" alt="">
+					            </div>
+					            <div class="uk-card-body">
+					                <h3 class="uk-card-title">Media Top</h3>
+					                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+					                <button class="uk-button uk-button-primary">Придбати</button>
+					            </div>
+					        </div>
+					    </div>
+			        </li>
+			        <li>
+			            <div>
+					        <div class="uk-card uk-card-default">
+					            <div class="uk-card-media-top">
+					                <img class="products__icon" src="img/1C-small-bussines.jpg" alt="">
+					            </div>
+					            <div class="uk-card-body">
+					                <h3 class="uk-card-title">Media Top</h3>
+					                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+					                <button class="uk-button uk-button-primary">Придбати</button>
+					            </div>
+					        </div>
+					    </div>
+			        </li>
+			    </ul>
+
+			    <a class="uk-slidenav-large uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+			    <a class="uk-slidenav-large uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+			</div>
+		</div>
+	</div>
+	<!-- end product block -->
+	<div class="uk-container hr-line">
+		<hr class="uk-divider-icon">
+	</div>
+	<!-- start our team block -->
+	<div class="uk-section our-team">
+		<div class="uk-container"">
+			<h2 class="uk-text-center">Наша Команда</h2>
+			<div class="uk-grid-medium uk-child-width-expand@s uk-text-center" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 200; repeat: true" uk-grid>
+			    <div>
+			        <div class="uk-card uk-card-default uk-card-body">
+						<h4>Литвиненко Віталій Михайлович</h4>
+						<img src="https://www.island-ukraine.com/wp-content/uploads/2016/08/page1_pic1.jpg">
+						<p>1С: Професіонал. Успішно склав сертифікаційний екзамен на знання можливостей і особливостей застосування типової конфігурації "Управління торгівлею для України" системи програм "1С: Підприємство 8".</p>
+						<button class="uk-button uk-button-primary">Зв'язатися</button>
+			        </div>
+			    </div>
+				<div>
+			        <div class="uk-card uk-card-default uk-card-body">
+						<h4>Литвиненко Віталій Михайлович</h4>
+						<img src="https://www.island-ukraine.com/wp-content/uploads/2016/08/page1_pic1.jpg">
+						<p>1С: Професіонал. Успішно склав сертифікаційний екзамен на знання можливостей і особливостей застосування типової конфігурації "Управління торгівлею для України" системи програм "1С: Підприємство 8".</p>
+						<button class="uk-button uk-button-primary">Зв'язатися</button>
+			        </div>
+			    </div>
+			    <div>
+			        <div class="uk-card uk-card-default uk-card-body">
+			        	<h4>Литвиненко Віталій Михайлович</h4>
+						<img src="https://www.island-ukraine.com/wp-content/uploads/2016/08/page1_pic1.jpg">
+						<p>1С: Професіонал. Успішно склав сертифікаційний екзамен на знання можливостей і особливостей застосування типової конфігурації "Управління торгівлею для України" системи програм "1С: Підприємство 8".</p>
+						<button class="uk-button uk-button-primary">Зв'язатися</button>
+			        </div>
+			    </div>
+			    <div>
+			        <div class="uk-card uk-card-default uk-card-body">
+			        	<h4>Литвиненко Віталій Михайлович</h4>
+						<img src="https://www.island-ukraine.com/wp-content/uploads/2016/08/page1_pic1.jpg">
+						<p>1С: Професіонал. Успішно склав сертифікаційний екзамен на знання можливостей і особливостей застосування типової конфігурації "Управління торгівлею для України" системи програм "1С: Підприємство 8".</p>
+						<button class="uk-button uk-button-primary">Зв'язатися</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<!-- end our team block -->
+	<div class="uk-container hr-line">
+		<hr class="uk-divider-icon">
+	</div>
+	<!-- start our clients -->
+	<div class="uk-section our-clients">
+		<div class="uk-container">
+			<div class="uk-child-width-1-3@m" uk-grid>
+			    <div>
+			        <div class="uk-card ">
+			            <div class="uk-card-media-top uk-text-center ">
+			                <img src="img/logo-roshen.jpg" alt="" class="our-clients__logo">
+			            </div>
+					</div>
+				</div>
+				<div>
+			        <div class="uk-card ">
+			            <div class="uk-card-media-top uk-text-center ">
+			                <img src="img/logo-sdu.png" alt="" class="our-clients__logo">
+			            </div>
+					</div>
+				</div>
+				<div>
+			        <div class="uk-card">
+			            <div class="uk-card-media-top uk-text-center ">
+			                <img src="img/logo-stg.png" alt="" class="our-clients__logo">
+			            </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end our clients block -->
+	<div class="uk-container hr-line">
+		<hr class="uk-divider-icon">
+	</div>
+	<!-- start footer -->
+	<div class="uk-section uk-padding-remove-bottom">
+		<div class="uk-container footer">
+			<div class="uk-background-muted uk-padding uk-panel uk-flex uk-flex-around">
+				<div class="footer-adress">
+					<ul class="uk-list "> 
+						<li>40000, Україна, м.Суми, вул.Привокзальна, 9</li>					
+					</ul>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1495.4257846907938!2d34.80526917795516!3d50.9237842758556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcc55c0a0c2e79cf4!2sTov+%22Itts+%22Island-Ukrayina%22!5e0!3m2!1sru!2sua!4v1516695047062" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+	            <div class="footer-contacts ">
+	            	<ul class="uk-list uk-margin-remove">
+					    <li class="uk-margin-remove">+38 (0542) 790-750</li>
+					    <li class="uk-margin-remove">+38 (066) 510-50-08</li>
+					    <li class="uk-margin-remove">+38 (073) 510-50-08</li>
+					    <li class="uk-margin-remove">+38 (098) 510-50-08</li>
+					    <li class="footer-mail">E-mail</li>
+					    <li class="uk-margin-remove footer-mail"><a href="mailto:INFO@ISLAND-UKRAINE.COM">INFO@ISLAND-UKRAINE.COM</a></li>
+					</ul>
+	            </div>
+	            <div class="uk-width-medium footer-partners">
+   					<h3 class="uk-card-title uk-text-center">Наші партнери</h3>
+	            	<div  uk-grid>
+						<div class="uk-margin-remove">
+					        <div class="uk-card uk-card-default">
+					            <div class="uk-card-media-top">
+					                <img class="footer-partners__big-icon" src="img/1CLogo.jpg" alt="">
+					            </div>
+					        </div>
+					    </div>
+					    <div class="uk-margin-remove">
+					        <div class="uk-card uk-card-default">
+					            <div class="uk-card-media-top">
+					                <img class="footer-partners__big-icon" src="img/1CSedLogo.jpg" alt="">
+					            </div>
+					        </div>
+					    </div>
+					    <div class="uk-margin-remove">
+					        <div class="uk-card uk-card-default">
+					            <div class="uk-card-media-top">
+					                <img class="footer-partners__big-icon" src="img/AgentPlusLogo.jpg" alt="">
+					            </div>
+					        </div>
+					    </div>
+					    <div class="uk-margin-remove">
+					        <div class="uk-card uk-card-default">
+					            <div class="uk-card-media-top">
+					                <img src="img/MicrosoftLogo.jpg" alt="">
+					            </div>
+					        </div>
+					    </div>
+		            </div>
+	            </div>
+	            
+	      	</div>
+		</div>
+	</div>	
+	<!-- <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMBM1ag7xEAFR9qgQ0AShPjiA0iTA67No&callback=initMap">
+    </script> -->
+	<!-- end footer  -->
+	
+</body>
+</html>
